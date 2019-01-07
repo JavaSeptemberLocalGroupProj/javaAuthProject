@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Main</string>
+    <string name="textView">Description text</string>
+    <string name="textView2">........................................................................................</string>
+    <string name="textView3">........................................................................................</string>
+    <string name="textView4">........................................................................................</string>
+    <string name="textView5">........................................................................................</string>
+    <string name="editTextHint">Enter your soft token code</string>
+    <string name="button">OK</string>
+    <string name="textView6">Wrong token</string>
+    <string name="textView7">One time pass is</string>
+    <string name="textView8">pass</string>
+</resources>
