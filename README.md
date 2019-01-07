@@ -1,7 +1,11 @@
 # javaAuthProject
-sdaas - FirstPage(Country code and number Selection)
-Main2 - Token Entry and Code giving
+Auth2019IF - SMS Code writing and synchronizing with backend
 CallPage - Call Page
-OverflowMenu1 - Token Selection and Interactive choosing by overflow menu
+Main2 - Token Entry and Code giving
+MyApplication3 - Adding new account screen
 OtherNameDisplay - Call ore SMS Choosing
-All stuctur problems are TeamLead's fault
+OverflowMenu1 - Token Selection and Interactive choosing by overflow menu
+sdaas - FirstPage(Country code and number Selection)
+
+
+All structure problems are TeamLead's fault
