@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="description">Description text</string>
+    <string name="dots">...............................................................................</string>
+    <string name="button1">Scan QR Code</string>
+    <string name="button2">Enter code manually</string>
+</resources>
