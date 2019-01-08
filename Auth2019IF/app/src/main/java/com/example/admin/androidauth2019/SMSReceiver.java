@@ -9,9 +9,19 @@ import android.telephony.SmsMessage;
 public class SMSReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        System.out.println("Hello World!!!!!!");
         SmsMessage sm = Telephony.Sms.Intents.getMessagesFromIntent(intent)[0];
-        System.out.println("Yess: " + sm.getMessageBody());
-
+        String message = sm.getMessageBody();
+        String code = "";
+        for (char item : message.toCharArray()) {
+            if (Character.isDigit(item)) {
+                code += item;
+            }
+        }
+        if (code.length() == 4)
+        {
+            System.out.println(code);
+            MainActivity.isRightPassword(code);
+            MainActivity.setPw(code);
+        }
     }
 }
