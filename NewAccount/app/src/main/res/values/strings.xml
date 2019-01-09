@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NewAccount</string>
+
+    <string name="textView">Description text</string>
+    <string name="textViewDot">........................................................................................</string>
+    <string name="buttonQR">Scan QR Code</string>
+    <string name="buttonEnterManually">Enter code manually</string>
+
+    <string name="editTextHint">Enter your soft token code</string>
+    <string name="buttonOk">OK</string>
+    <string name="textView6">Wrong token</string>
+    <string name="textView7">One time pass is</string>
+    <string name="textView8">pass</string>
+
+    <string name="result_text_default">Please focus camera to QR Code</string>
+</resources>
