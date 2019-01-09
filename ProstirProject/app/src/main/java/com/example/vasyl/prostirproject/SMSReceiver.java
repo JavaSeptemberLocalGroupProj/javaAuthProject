@@ -1,4 +1,4 @@
-package com.example.admin.androidauth2019;
+package com.example.vasyl.prostirproject;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -23,8 +23,9 @@ public class SMSReceiver extends BroadcastReceiver {
             if (code.length() == 4)
             {
                 System.out.println(code);
-                MainActivity.isRightPassword(code);
-                MainActivity.setPw(code);
+                SMSActivity s=new SMSActivity();
+                s.isRightPassword(code);
+                SMSActivity.setPw(code);
                 System.out.println(code);
             }
        // }

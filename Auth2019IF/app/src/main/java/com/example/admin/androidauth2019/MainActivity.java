@@ -23,7 +23,7 @@ import com.goodiebag.pinview.Pinview;
 public class MainActivity extends AppCompatActivity {
 
     private final static String PASSWORD = "0123";
-    private final static String PHONENUMBER = "6505551212";
+    private final static String PHONENUMBER = "+380665210672";
     static TextView tw;
     static Pinview pw;
 

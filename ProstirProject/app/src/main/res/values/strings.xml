@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ProstirProject</string>
+    <string name="call">Call</string>
+    <string name="message">Send Message</string>
+    <string name="toolbar_sign_out">Connected Devices</string>
+    <string name="toolbar_sign_out1">Delete Account</string>
+    <string name="toolbar_sign_out2">Log Out</string>
+    <string name="toolbar_sign_out3">Add new account</string>
+    <string name="textView">Description text</string>
+    <string name="descrHere">Description here</string>
+    <string name="buttonQR">Scan QR Code</string>
+    <string name="buttonEnterManually">Enter code manually</string>
+    <string name="editTextHint">Enter your soft token code</string>
+    <string name="buttonOk">OK</string>
+    <string name="textView6">Wrong token</string>
+    <string name="textView7">One time pass is</string>
+    <string name="textView8">pass</string>
+</resources>
