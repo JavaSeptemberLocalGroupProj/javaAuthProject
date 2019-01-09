@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Part3</string>
     <string name="textView">Description text</string>
-    <string name="textViewDot">........................................................................................</string>
+    <string name="descrHere">Description here</string>
     <string name="buttonQR">Scan QR Code</string>
     <string name="buttonEnterManually">Enter code manually</string>
 
@@ -10,4 +10,5 @@
     <string name="textView6">Wrong token</string>
     <string name="textView7">One time pass is</string>
     <string name="textView8">pass</string>
+
 </resources>

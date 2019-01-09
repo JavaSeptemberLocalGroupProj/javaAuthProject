@@ -11,7 +11,7 @@ public class SMSReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         SmsMessage sm = Telephony.Sms.Intents.getMessagesFromIntent(intent)[0];
         String sp = sm.getOriginatingAddress();
-        if (MainActivity.isRightPhone(sp)) {
+        //if (MainActivity.isRightPhone(sp)) {
             String message = sm.getMessageBody();
             String code = "";
             System.out.println(sp);
@@ -25,7 +25,8 @@ public class SMSReceiver extends BroadcastReceiver {
                 System.out.println(code);
                 MainActivity.isRightPassword(code);
                 MainActivity.setPw(code);
+                System.out.println(code);
             }
-        }
+       // }
     }
 }
