@@ -1,4 +1,4 @@
-package com.example.vasyl.prostirproject;
+package com.example.vasyl.prostir;
 
 import android.app.Activity;
 import android.os.Bundle;

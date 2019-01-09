@@ -1,4 +1,4 @@
-package com.example.vasyl.prostirproject;
+package com.example.vasyl.prostir;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -128,36 +128,13 @@ public class QrCodeScaner extends AppCompatActivity implements ZXingScannerView.
             Toast.makeText(getApplicationContext(), "Wrong QR Code!!!", Toast.LENGTH_LONG).show();
             scannerView.resumeCameraPreview(QrCodeScaner.this);
         }
-        /***    AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Scan Result");
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                scannerView.resumeCameraPreview(QrCodeScaner.this);
-            }
-        });
-        builder.setNeutralButton("Copy", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                //    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(myResult));
-                //    startActivity(browserIntent);
-                ClipboardManager clipbord = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-                ClipData clip = ClipData.newPlainText("", myResult);
-                clipbord.setPrimaryClip(clip);
-            }
-        });
-        builder.setMessage(result.getText());
-        AlertDialog alert1 = builder.create();
-        ToneGenerator toneG = new ToneGenerator(AudioManager.STREAM_ALARM, 100);
-        toneG.startTone(ToneGenerator.TONE_CDMA_ALERT_CALL_GUARD, 200);
-        alert1.show();
-    ***/
+
 
 
 
     }
     void gotoNext(){
-        Intent i = new Intent(this, Next.class);
+        Intent i = new Intent(this, DecryptedMessage.class);
         startActivity(i);
     }
 }

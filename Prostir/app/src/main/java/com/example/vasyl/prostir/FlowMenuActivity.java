@@ -1,15 +1,13 @@
-package com.example.vasyl.prostirproject;
+package com.example.vasyl.prostir;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
-
 
 
 public class FlowMenuActivity extends AppCompatActivity{
@@ -38,18 +36,16 @@ public class FlowMenuActivity extends AppCompatActivity{
     public boolean onOptionsItemSelected(MenuItem item) {
         int id= item.getItemId();
 
-        /*if(id==R.id.action_sign_out){
-            Intent myintent = new Intent(this, Test.class);
-            startActivity(myintent);
-            return false;
-        }*/
         switch (item.getItemId()){
             case R.id.action_sign_out:
-            {Intent myintent = new Intent(this, Test.class);
-            startActivity(myintent);
+            {Intent i = new Intent(this, Devices.class);
+            startActivity(i);
             return false;}
 
-
+            case R.id.action_sign_out3:
+            {Intent i = new Intent(this, AddAcount.class);
+            startActivity(i);
+            return false;}
         }
         return super.onOptionsItemSelected(item);
     }

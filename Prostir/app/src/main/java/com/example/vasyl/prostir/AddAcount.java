@@ -1,18 +1,18 @@
-package com.example.vasyl.prostirproject;
+package com.example.vasyl.prostir;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity1 extends AppCompatActivity {
+public class AddAcount extends AppCompatActivity {
     Button buttonQR;
     Button buttonEcm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main1);
+        setContentView(R.layout.add_acount);
         buttonQR = findViewById(R.id.buttonQR);
         buttonEcm = findViewById(R.id.buttonEcm);
         buttonEcm.setOnClickListener(new View.OnClickListener() {
