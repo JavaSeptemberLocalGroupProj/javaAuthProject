@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.vasyl.prostir;
+package com.example.vasyl.prostir.ui;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -22,6 +22,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.vasyl.prostir.R;
+import com.example.vasyl.prostir.models.Device;
 
 import java.util.ArrayList;
 

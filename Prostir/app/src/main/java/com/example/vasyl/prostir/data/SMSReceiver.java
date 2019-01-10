@@ -1,10 +1,12 @@
-package com.example.vasyl.prostir;
+package com.example.vasyl.prostir.data;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.provider.Telephony;
 import android.telephony.SmsMessage;
+
+import com.example.vasyl.prostir.ui.SMSActivity;
 
 public class SMSReceiver extends BroadcastReceiver {
     @Override

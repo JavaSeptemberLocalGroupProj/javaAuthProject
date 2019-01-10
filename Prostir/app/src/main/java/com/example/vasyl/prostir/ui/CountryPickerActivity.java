@@ -1,4 +1,4 @@
-package com.example.vasyl.prostir;
+package com.example.vasyl.prostir.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.vasyl.prostir.R;
 import com.rilixtech.CountryCodePicker;
 
 public class CountryPickerActivity extends AppCompatActivity implements View.OnClickListener {

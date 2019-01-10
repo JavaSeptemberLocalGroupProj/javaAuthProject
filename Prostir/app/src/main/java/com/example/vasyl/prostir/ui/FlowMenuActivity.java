@@ -1,4 +1,4 @@
-package com.example.vasyl.prostir;
+package com.example.vasyl.prostir.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.example.vasyl.prostir.R;
+import com.example.vasyl.prostir.utils.Devices;
 
 
 public class FlowMenuActivity extends AppCompatActivity{

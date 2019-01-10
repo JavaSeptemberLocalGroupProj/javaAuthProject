@@ -1,4 +1,4 @@
-package com.example.vasyl.prostir;
+package com.example.vasyl.prostir.utils;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -9,6 +9,8 @@ import android.os.CancellationSignal;
 import android.support.v4.content.ContextCompat;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.vasyl.prostir.R;
 
 @TargetApi(Build.VERSION_CODES.M)
 public class FingerprintHandler extends FingerprintManager.AuthenticationCallback {

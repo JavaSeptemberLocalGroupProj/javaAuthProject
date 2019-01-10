@@ -1,4 +1,4 @@
-package com.example.vasyl.prostir;
+package com.example.vasyl.prostir.ui;
 
 import android.Manifest;
 import android.annotation.TargetApi;
@@ -17,6 +17,9 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.vasyl.prostir.R;
+import com.example.vasyl.prostir.utils.FingerprintHandler;
 
 import java.io.IOException;
 import java.security.InvalidAlgorithmParameterException;

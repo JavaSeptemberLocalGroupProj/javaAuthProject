@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.vasyl.prostir;
+package com.example.vasyl.prostir.models;
 
 
 public class Device {

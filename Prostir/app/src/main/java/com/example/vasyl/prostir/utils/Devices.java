@@ -1,8 +1,12 @@
-package com.example.vasyl.prostir;
+package com.example.vasyl.prostir.utils;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
+
+import com.example.vasyl.prostir.ui.DeviceAdapter;
+import com.example.vasyl.prostir.R;
+import com.example.vasyl.prostir.models.Device;
 
 import java.util.ArrayList;
 

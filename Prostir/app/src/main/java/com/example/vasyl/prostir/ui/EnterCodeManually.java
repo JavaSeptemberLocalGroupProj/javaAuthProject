@@ -1,4 +1,4 @@
-package com.example.vasyl.prostir;
+package com.example.vasyl.prostir.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.vasyl.prostir.R;
 
 public class EnterCodeManually extends AppCompatActivity {
     String token = "25";

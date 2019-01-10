@@ -19,24 +19,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CountryPickerActivity">
+        <activity android:name=".ui.CountryPickerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TypeAuthActivity" />
-        <activity android:name=".SMSActivity" />
-        <activity android:name=".FlowMenuActivity" />
-        <activity android:name=".Devices" />
-        <activity android:name=".EnterCodeManually" />
-        <activity android:name=".DecryptedMessage" />
-        <activity android:name=".QrCodeScaner" />
-        <activity android:name=".AddAcount" />
-        <activity android:name=".Next" />
-        <activity android:name=".MainActivity1" />
-        <activity android:name=".PinActivity" />
+        <activity android:name=".ui.TypeAuthActivity" />
+        <activity android:name=".ui.SMSActivity" />
+        <activity android:name=".ui.FlowMenuActivity" />
+        <activity android:name=".utils.Devices" />
+        <activity android:name=".ui.EnterCodeManually" />
+        <activity android:name=".ui.DecryptedMessage" />
+        <activity android:name=".ui.QrCodeScaner" />
+        <activity android:name=".ui.AddAcount" />
+        <activity android:name=".ui.Next" />
+        <activity android:name=".ui.MainActivity1" />
+        <activity android:name=".ui.PinActivity" />
         <activity android:name=".MainActivity"></activity>
     </application>
 
