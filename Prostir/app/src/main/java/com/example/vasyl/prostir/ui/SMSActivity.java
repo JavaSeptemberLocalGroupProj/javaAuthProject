@@ -22,7 +22,7 @@ public class SMSActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sms);
         pw = findViewById(R.id.pinview1);
-
+        tw = findViewById(R.id.textView);
         pw.setPinViewEventListener(new Pinview.PinViewEventListener() {
             @Override
             public void onDataEntered(Pinview pinview, boolean b) {

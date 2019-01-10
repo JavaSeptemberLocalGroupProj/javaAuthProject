@@ -37,7 +37,7 @@
         <activity android:name=".ui.Next" />
         <activity android:name=".ui.MainActivity1" />
         <activity android:name=".ui.PinActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ui.RecallActivity" />
     </application>
 
 </manifest>

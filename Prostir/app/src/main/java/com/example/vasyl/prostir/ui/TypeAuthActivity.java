@@ -45,11 +45,12 @@ public class TypeAuthActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View v){
         switch (v.getId()){
             case R.id.call:{
-
+                Intent i = new Intent(this, RecallActivity.class);
+                startActivity(i);
                 break;
             }
             case R.id.sendmessage:{
-                Intent i=new Intent(this,SMSActivity.class);
+                Intent i=new Intent(this, SMSActivity.class);
                 startActivity(i);
                 break;
             }

@@ -30,7 +30,7 @@
         android:layout_height="33dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-
+        android:onClick="onSendMsgAfainBtnClick"
         android:layout_marginStart="127dp"
         android:layout_marginTop="66dp"
         android:text="Send message again"
