@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.vasyl.prostir">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -10,6 +11,7 @@
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,17 +26,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".TypeAuthActivity" />
         <activity android:name=".SMSActivity" />
         <activity android:name=".FlowMenuActivity" />
-        <activity android:name=".Devices"/>
+        <activity android:name=".Devices" />
         <activity android:name=".EnterCodeManually" />
         <activity android:name=".DecryptedMessage" />
         <activity android:name=".QrCodeScaner" />
         <activity android:name=".AddAcount" />
-        <activity android:name=".Next"></activity>
-        <activity android:name=".MainActivity1"></activity>
-        <activity android:name=".PinActivity"></activity>
+        <activity android:name=".Next" />
+        <activity android:name=".MainActivity1" />
+        <activity android:name=".PinActivity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
+
 </manifest>
