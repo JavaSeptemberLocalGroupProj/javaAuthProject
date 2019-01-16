@@ -6,13 +6,14 @@ import android.content.Intent;
 import android.provider.Telephony;
 import android.telephony.SmsMessage;
 
-import com.example.vasyl.prostir.ui.SMSActivity;
+import com.example.vasyl.prostir.ui.AcceptBySms;
 
 public class SMSReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         SmsMessage sm = Telephony.Sms.Intents.getMessagesFromIntent(intent)[0];
         String sp = sm.getOriginatingAddress();
+        // This if block adds phone checker
         //if (MainActivity.isRightPhone(sp)) {
             String message = sm.getMessageBody();
             String code = "";
@@ -24,11 +25,9 @@ public class SMSReceiver extends BroadcastReceiver {
             }
             if (code.length() == 4)
             {
-                System.out.println(code);
-                SMSActivity s=new SMSActivity();
+                AcceptBySms s = new AcceptBySms();
                 s.isRightPassword(code);
-                SMSActivity.setPw(code);
-                System.out.println(code);
+                AcceptBySms.setPw(code);
             }
        // }
     }

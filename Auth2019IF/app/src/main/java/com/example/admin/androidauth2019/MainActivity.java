@@ -23,7 +23,6 @@ import com.goodiebag.pinview.Pinview;
 public class MainActivity extends AppCompatActivity {
 
     private final static String PASSWORD = "0123";
-    private final static String PHONENUMBER = "+380665210672";
     static TextView tw;
     static Pinview pw;
 
@@ -42,13 +41,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
     public void onSendMsgAfainBtnClick(View view) {
-        Toast.makeText(getApplicationContext(),
+        /*Toast.makeText(getApplicationContext(),
                 "Sending message...",
                 Toast.LENGTH_SHORT)
-                .show();
-        /*int NOTIFICATION_ID = 234;
+                .show();*/
+        int NOTIFICATION_ID = 234;
 
         NotificationManager notificationManager = (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
 
@@ -82,26 +80,15 @@ public class MainActivity extends AppCompatActivity {
 
         builder.setContentIntent(resultPendingIntent);
 
-        notificationManager.notify(NOTIFICATION_ID, builder.build());*/
+        notificationManager.notify(NOTIFICATION_ID, builder.build());
     }
-    public static void isRightPassword (String enteredPassword){
-        if (enteredPassword.equals(PASSWORD)) /*System.out.println*/ {
-            tw.setText("You're enter");
-        }
+    public void isRightPassword (String enteredPassword){
+        if (enteredPassword.equals(PASSWORD)) /*System.out.println*/tw.setText("You're enter");
         else {
             tw.setText("The code is incorrect!");
             pw.setInputType(Pinview.InputType.TEXT);
             pw.setValue("");
             pw.setInputType(Pinview.InputType.NUMBER);
         }
-    }
-    public static boolean isRightPhone (String PhoneNumber) {
-        boolean result = false;
-        if (PhoneNumber.equals(PHONENUMBER)) result = true;
-        return result;
-    }
-
-    public static void setPw (String code) {
-        pw.setValue(code);
     }
 }

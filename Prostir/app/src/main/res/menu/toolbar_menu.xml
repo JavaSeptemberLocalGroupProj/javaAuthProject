@@ -6,20 +6,20 @@
     tools:context=".activity.FlowMewnuActivity">
 
     <item
-        android:id="@+id/action_sign_out3"
-        android:title="@string/toolbar_sign_out3"
+        android:id="@+id/addNewAccountMenuItem"
+        android:title="@string/add_new_account"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_sign_out"
-        android:title="@string/toolbar_sign_out"
+        android:id="@+id/connectedDevicesMenuItem"
+        android:title="@string/connected_devices"
         app:showAsAction="never"/>
     <item
-        android:id="@+id/action_sign_out1"
-        android:title="@string/toolbar_sign_out1"
+        android:id="@+id/deleteAccountMenuItem"
+        android:title="@string/delete_account"
         app:showAsAction="never"/>
     <item
-        android:id="@+id/action_sign_out2"
-        android:title="@string/toolbar_sign_out2"
+        android:id="@+id/logOutMenuItem"
+        android:title="@string/log_out"
         app:showAsAction="never"/>
 
 </menu>

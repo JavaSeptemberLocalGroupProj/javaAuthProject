@@ -19,25 +19,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.CountryPickerActivity">
+        <activity android:name=".ui.CountryPicker">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.TypeAuthActivity" />
-        <activity android:name=".ui.SMSActivity" />
-        <activity android:name=".ui.FlowMenuActivity" />
-        <activity android:name=".utils.Devices" />
+        <activity android:name=".ui.SelectAuthType" />
+        <activity android:name=".ui.AcceptBySms" />
+        <activity android:name=".ui.AccountsList" />
+        <activity android:name=".ui.DevicesList" />
         <activity android:name=".ui.EnterCodeManually" />
         <activity android:name=".ui.DecryptedMessage" />
-        <activity android:name=".ui.QrCodeScaner" />
-        <activity android:name=".ui.AddAcount" />
-        <activity android:name=".ui.Next" />
-        <activity android:name=".ui.MainActivity1" />
-        <activity android:name=".ui.PinActivity" />
-        <activity android:name=".ui.RecallActivity" />
+        <activity android:name=".ui.QrCodeScanner" />
+        <activity android:name=".ui.AccountAdd" />
+        <activity android:name=".ui.Authorization" />
+        <activity android:name=".ui.AuthByPin" />
+        <activity android:name=".ui.AcceptByCall" />
     </application>
 
 </manifest>

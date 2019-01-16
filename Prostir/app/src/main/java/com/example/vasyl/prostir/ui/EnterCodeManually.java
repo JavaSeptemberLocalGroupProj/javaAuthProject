@@ -11,34 +11,31 @@ import android.widget.TextView;
 import com.example.vasyl.prostir.R;
 
 public class EnterCodeManually extends AppCompatActivity {
-    String token = "25";
-    Button ok;
-    EditText ed;
-    TextView tv;
+    String TOKEN = "25";
+    Button okayBtn_ecm;
+    EditText enterSoftTokenEditText;
+    TextView errorSoftTokenTextView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter_code_manually);
-        final String TOKEN = new String(token);
-        ok = findViewById(R.id.button);
-        ed = findViewById(R.id.editText);
-        tv = findViewById(R.id.textView6);
-        ok.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String temp = ed.getText().toString();
-                if(TOKEN.equals(temp)){
-                    tv.setVisibility(View.INVISIBLE);
-                    gotoDecryptedMessage();
-                }else{
-                    tv.setVisibility(View.VISIBLE);
-                    ed.setText("");
-                }
-            }
-        });
+        okayBtn_ecm = findViewById(R.id.okayBtn_ecm);
+        enterSoftTokenEditText = findViewById(R.id.enterSoftTokenEditText);
+        errorSoftTokenTextView = findViewById(R.id.errorSoftTokenTextView);
     }
 
-    void gotoDecryptedMessage(){
+    public void onOkayBtnEcmClick (View view) {
+        String temp = enterSoftTokenEditText.getText().toString();
+        if (TOKEN.equals(temp)) {
+            errorSoftTokenTextView.setVisibility(View.INVISIBLE);
+            gotoDecryptedMessagePage();
+        } else {
+            errorSoftTokenTextView.setVisibility(View.VISIBLE);
+            enterSoftTokenEditText.setText("");
+        }
+    }
+
+    private void gotoDecryptedMessagePage(){
         Intent i = new Intent(this, DecryptedMessage.class);
         startActivity(i);
     }
